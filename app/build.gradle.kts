@@ -1,7 +1,7 @@
 plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.kotlin.android)
-    alias(libs.plugins.kotlin.compose)  // <-- NEW
+    alias(libs.plugins.kotlin.compose)
     id("kotlin-kapt")
     id("com.google.dagger.hilt.android")
 }
@@ -31,7 +31,6 @@ android {
         compose = true
     }
 
-    // NO kotlinCompilerExtensionVersion needed anymore
 }
 
 dependencies {

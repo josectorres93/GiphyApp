@@ -90,7 +90,7 @@ fun GifListScreen(viewModel: GiphyViewModel, onGifClick: (Gif) -> Unit) {
                                 ) {
                                     val url = gif.previewUrl ?: gif.fullUrl
                                     if (!url.isNullOrBlank()) {
-                                        GifItem(url, gif.title ?: "", context)
+                                        GifItem(url, gif.title, context)
                                     } else {
                                         Box(contentAlignment = Alignment.Center) {
                                             Text(gif.title.ifBlank { "GIF" })
